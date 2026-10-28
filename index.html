@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1e8">
+  <meta name="description" content="Uma homenagem feita com amor.">
+  <title>Uma homenagem para você</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Voltar ao início"><span class="wordmark-mark" aria-hidden="true">✿</span><span class="wordmark-copy">com amor<small>um álbum para você</small></span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#fotografias">Fotografias</a><a href="#cartas">Cartas para você</a><a href="#encerramento">Encerramento</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-content="eyebrow">Uma homenagem feita com amor</p>
+        <p class="mother-name" data-content="motherName">Debora</p>
+        <h1 id="hero-title" data-content="heroTitle">Hoje, o dia é todo seu.</h1>
+        <p class="hero-message" data-content="introMessage">Este pequeno álbum guarda um pouco do amor que sentimos por você.</p>
+        <a class="button button-primary" href="#fotografias">Abrir minha homenagem <span aria-hidden="true">↘</span></a>
+        <span class="hero-note">Feito para celebrar você</span>
+      </div>
+      <figure class="hero-photo photo-frame">
+        <img data-image="heroImage" src="./assets/images/hero.jpg" alt="Selfie sorridente da mãe em um ambiente interno" width="988" height="986" fetchpriority="high">
+        <figcaption>Uma vida inteira de amor em cada lembrança.</figcaption>
+      </figure>
+        <span class="hero-ornament" aria-hidden="true">✳</span>
+        <span class="birthday-seal" aria-hidden="true"><span>feliz</span><strong>aniversário</strong></span>
+    </section>
+
+    <section class="memories section-shell" id="fotografias" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="eyebrow">Instantes que ficam</p>
+        <h2 id="gallery-title">Nossa história em <em>fotografias</em></h2>
+        <p>Pequenos retratos de uma vida cercada de carinho.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+      <p class="empty-gallery" id="gallery-empty" hidden>As fotografias da família aparecerão aqui assim que forem adicionadas à pasta <code>assets/images/gallery/</code>.</p>
+    </section>
+
+    <section class="letters-section" id="cartas" aria-labelledby="letters-title">
+      <div class="section-shell">
+        <div class="section-heading letters-heading">
+          <p class="eyebrow">Palavras guardadas para você</p>
+          <h2 id="letters-title">Cartas para você</h2>
+          <p>Três vozes, cada uma com seu jeito de dizer: você é muito amada.</p>
+        </div>
+        <div class="letters-list" id="letters-list"></div>
+      </div>
+    </section>
+
+    <section class="closing section-shell" id="encerramento" aria-labelledby="closing-title">
+      <figure class="closing-photo photo-frame">
+        <img data-image="closingImage" src="./assets/images/closing.jpg" alt="Mãe, avó e filha reunidas ao ar livre" width="1276" height="962" loading="lazy">
+      </figure>
+      <div class="closing-copy">
+        <p class="eyebrow">Com todo o nosso amor</p>
+        <h2 id="closing-title" data-content="closingMessage">Se eu pudesse escolher novamente, ainda escolheria você como minha mãe.</h2>
+        <p class="birthday-note" data-content="birthdayMessage">Feliz aniversário. Que seu novo ciclo seja tão bonito quanto o amor que você espalha.</p>
+        <p class="signature">Com amor, <span data-content="signature">Pepe</span></p>
+      </div>
+    </section>
+  </main>
+  <footer><span>Feito com amor, para celebrar uma vida inteira.</span><a href="#inicio">Voltar ao início ↑</a></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visualização ampliada da fotografia">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Fechar fotografia">×</button>
+      <button class="lightbox-prev" type="button" aria-label="Fotografia anterior">←</button>
+      <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+      <button class="lightbox-next" type="button" aria-label="Próxima fotografia">→</button>
+      <p class="lightbox-count" aria-live="polite"></p>
+    </div>
+  </dialog>
+</body>
+</html>
